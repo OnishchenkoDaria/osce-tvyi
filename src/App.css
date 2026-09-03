@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1200px;
+
+    --color-brand-blue: #5B6FE0;
+    --color-brand-green: #4CAF50;
+    --color-brand-navy: #1A1F36;
+}
