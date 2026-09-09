@@ -1,5 +1,6 @@
 import './App.css'
-import { Header, HeroSection} from "./components/HeroSection.tsx";
+import { HeroSection} from "./components/HeroSection.tsx";
+import { Header } from "./components/Header.tsx";
 
 function App() {
     return (
