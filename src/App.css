@@ -9,4 +9,11 @@
     --color-brand-green:  #68CE77;
     --color-brand-yellow:  #FFDA5F;
     --color-brand-red: #FF5F74;
+
+    --font-sans: 'Ubuntu', ui-sans-serif, system-ui, sans-serif;
+    --font-heading: 'Source Sans 3 Variable', ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+    @apply font-sans;
 }
