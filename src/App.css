@@ -9,11 +9,33 @@
     --color-brand-green:  #68CE77;
     --color-brand-yellow:  #FFDA5F;
     --color-brand-red: #FF5F74;
+    --color-light-purple: #C3CBFF;
 
     --font-sans: 'Ubuntu', ui-sans-serif, system-ui, sans-serif;
     --font-heading: 'Source Sans 3 Variable', ui-sans-serif, system-ui, sans-serif;
 }
 
+:root {
+    --text-body: 12px;
+    --text-lg: 16px;
+    --text-xl: 24px;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --text-body: 14px;
+        --text-lg: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --text-body: 18px;
+        --text-lg: 20px;
+    }
+}
+
 body {
-    @apply font-sans;
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
 }

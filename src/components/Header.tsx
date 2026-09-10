@@ -17,7 +17,7 @@ export function Header() {
                     aria-label="Відкрити меню"
                     className="flex h-10 w-10 items-center justify-center text-brand-navy"
                 >
-                    <Menu className="h-6 w-6" />
+                    <Menu className="h-6 w-6" color="#7E7E83" />
                 </button>
             </div>
 
