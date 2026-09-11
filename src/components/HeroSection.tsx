@@ -1,7 +1,62 @@
+import { Section } from './layout/Section'
+import { Container } from './layout/Container'
+
+// visuals
+import heroBackground from '../assets/hero-bg.png'
+import flower from '../assets/flower.png'
+import plane from '../assets/plane.png'
+import pencil from '../assets/pencil.png'
+import osceLogo from '../assets/osce.png'
+import nsssLogo from '../assets/nsss.png'
+
 export function HeroSection() {
     return(
-        <div className="p-4 text-white bg-red-500 sm:bg-yellow-500 md:bg-green-500 lg:bg-brand-blue">
-            Resize: red less 480 , yellow ≥480 , green ≥768 , blue ≥1200
-        </div>
+        <Section className="relative overflow-hidden bg-brand-blue">
+            <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{ backgroundImage: `url(${heroBackground})` }}
+                aria-hidden="true"
+            />
+            <div className="relative z-10">
+                <Container>
+                    <div className="flex flex-col md:py-20 lg:py-24">
+
+                        <div className="grid grid-cols-[1fr_auto] items-center gap-4 md:gap-8">
+                            <h1 className="font-ubuntu text-3xl font-extrabold leading-tight text-white md:text-4xl lg:text-5xl">
+                                Простір, де живе дитинство
+                            </h1>
+
+                            <img
+                                src={flower}
+                                alt=""
+                                aria-hidden="true"
+                                className="w-27 md:w-32 lg:w-40"
+                            />
+                        </div>
+
+                        <p className="mt-4 max-w-full text-white/90 font-semibold md:mt-6 md:max-w-xl md:text-lg lg:max-w-2xl">
+                            «Твій» — це проект, що створений надати психологічну, соціальну й
+                            емоційну підтримку дітям, які постраждали від війни. А також
+                            допомогти батькам чи опікунам підтримувати дитину вдома.
+                        </p>
+
+                        {/* partner logos */}
+                        <div className="mt-8 flex h-11 items-center gap-6 md:mt-10 md:h-10">
+                            <img
+                                src={osceLogo}
+                                alt="OSCE"
+                                className="h-full py-1.5 w-auto object-contain opacity-70"
+                            />
+                            <img
+                                src={nsssLogo}
+                                alt="Національна соціальна сервісна служба України"
+                                className="h-full w-auto object-contain"
+                            />
+                        </div>
+
+                    </div>
+                </Container>
+            </div>
+        </Section>
     )
 }
