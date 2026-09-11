@@ -58,24 +58,24 @@ export function HeroSection() {
 
                         </div>
 
-                        <div className="relative hidden h-full w-64 md:block lg:w-90 mr-10">
+                        <div className="relative hidden h-full w-72 md:block lg:w-96">
                             <img
                                 src={plane}
                                 alt=""
                                 aria-hidden="true"
-                                className="absolute left-18 -rotate-30 -top-4 h-32 lg:w-36"
+                                className="absolute left-18 -top-4 w-36 -rotate-30 lg:w-38"
                             />
                             <img
                                 src={pencil}
                                 alt=""
                                 aria-hidden="true"
-                                className="absolute left-36 -top-4 w-auto h-70 lg:w-24"
+                                className="absolute left-36 -top-4 h-70 lg:h-75"
                             />
                             <img
                                 src={flower}
                                 alt=""
                                 aria-hidden="true"
-                                className="absolute left-0 top-28 h-38 md:w-40"
+                                className="absolute left-0 top-28 w-40 lg:w-42"
                             />
                         </div>
 
