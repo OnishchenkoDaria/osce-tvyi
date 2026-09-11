@@ -16,8 +16,8 @@
 }
 
 :root {
-    --text-body: 14px;
-    --text-lg: 16px;
+    --text-body: 12px;
+    --text-lg: 14px;
     --text-xl: 24px;
     --text-3xl: 30px;
 }
@@ -25,7 +25,7 @@
 @media (min-width: 768px) {
     :root {
         --text-body: 14px;
-        --text-lg: 18px;
+        --text-lg: 16px;
     }
 }
 
