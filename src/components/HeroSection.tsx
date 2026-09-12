@@ -11,7 +11,7 @@ import nsssLogo from '../assets/nsss.png'
 
 export function HeroSection() {
     return(
-        <Section className="relative overflow-hidden bg-brand-blue">
+        <Section className="relative overflow-hidden bg-brand-blue py-8 px-8 md:px-12 lg:px-16">
             <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${heroBackground})` }}
