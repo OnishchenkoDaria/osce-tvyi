@@ -33,3 +33,10 @@ export interface SupportType {
     icon: string
     label: string
 }
+
+export interface FaqItem {
+    question: string
+    paragraphs: string[]
+    bullets?: string[]
+    bulletsAfterParagraph?: number
+}
