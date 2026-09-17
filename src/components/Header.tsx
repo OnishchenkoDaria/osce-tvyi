@@ -1,7 +1,7 @@
 import { Menu } from "@mynaui/icons-react";
 import {useState} from 'react'
 import { MobileMenuOverlay } from './MobileMenuOverlay'
-import logo from "../assets/tviy-logo.png"
+import logo from "../assets/logos/tviy-logo.png"
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)

@@ -3,11 +3,11 @@ import { Container } from './layout/Container'
 
 // visuals
 import heroBackground from '../assets/hero-bg.png'
-import flower from '../assets/flower.png'
-import pencil from '../assets/pencil.png'
-import plane from '../assets/plane.png'
-import osceLogo from '../assets/osce.png'
-import nsssLogo from '../assets/nsss.png'
+import flower from '../assets/images/flower.png'
+import pencil from '../assets/images/pencil.png'
+import plane from '../assets/images/plane.png'
+import osceLogo from '../assets/logos/osce.png'
+import nsssLogo from '../assets/logos/nsss.png'
 
 export function HeroSection() {
     return(

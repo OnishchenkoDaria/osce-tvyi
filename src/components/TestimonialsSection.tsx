@@ -1,7 +1,7 @@
 import { Section } from './layout/Section'
 import { Container } from './layout/Container'
 import { testimonials } from './data/content'
-import notebook from '../assets/notebook-yellow.png'
+import notebook from '../assets/images/notebook-yellow.png'
 
 export function TestimonialsSection() {
     return (
