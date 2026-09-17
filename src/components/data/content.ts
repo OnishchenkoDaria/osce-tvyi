@@ -1,4 +1,4 @@
-import type {NavLink, InfoCard, Region} from '../../types/content-interfaces'
+import type {NavLink, InfoCard, Region, FormatCard} from '../../types/content-interfaces'
 
 export const navLinks: NavLink[] = [
     { label: 'Про проєкт', href: '#about' },
@@ -109,5 +109,38 @@ export const regions: Region[] = [
             'м. Мукачево, вул. Духновича, 1, 3 поверх',
             'м. Берегове, вул. Шевченка, 122',
         ],
+    },
+]
+
+export const formatCards: FormatCard[] = [
+    {
+        icon: 'yellow',
+        title: 'Індивідуальні консультації',
+        description: 'Підтримка дитини відповідно до її запиту, потреб та віку.'
+    },
+    {
+        icon: 'green',
+        title: 'Групові заняття',
+        description: 'Заняття з емоційного розвантаження та розвитку навичок самопідтримки.'
+    },
+    {
+        icon: 'blue',
+        title: 'Арттерапія',
+        description: 'Малювання, ліплення, театр та інші формати, що допомагають опрацьовувати досвід.'
+    },
+    {
+        icon: 'blue',
+        title: 'Корекційно-розвивальні формати',
+        description: 'Заняття, спрямовані на розвиток мовлення, пам\'яті, мислення та уваги.'
+    },
+    {
+        icon: 'yellow',
+        title: 'Консультації для батьків та опікунів',
+        description: 'Розуміння потреб дитини, практичні техніки та підтримка дорослих вдома.'
+    },
+    {
+        icon: 'green',
+        title: 'Інші формати',
+        description: 'Лекції, майстер-класи, тренінги та тематичні заходи за запитом простору та громади.'
     },
 ]

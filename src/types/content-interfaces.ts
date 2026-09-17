@@ -17,3 +17,9 @@ export interface Region {
     shapeIcon: string     // small region silhouette (mobile accordion)
     addresses: string[]
 }
+
+export interface FormatCard {
+    icon: string
+    title: string
+    description: string
+}
