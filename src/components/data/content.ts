@@ -17,20 +17,20 @@ export const infoCards: InfoCard[] = [
     { icon: 'shield',   title: 'Чому безпечно?', description: 'Працюють виключно кваліфіковані фахівці. Без діагнозів, ярликів і зайвої бюрократії – з повагою до дитини.' },
 ]
 
-import mapVinnytsia from '../assets/maps/vinnytsia.png'
-import mapLviv from '../assets/maps/lviv.png'
-import mapTernopil from '../assets/maps/ternopil.png'
-import mapIvano from '../assets/maps/ivano-frankivsk.png'
-import mapChernivtsi from '../assets/maps/chernivtsi.png'
-import mapZakarpattia from '../assets/maps/zakarpattia.png'
-import mapDefault  from '../assets/maps/default.png'
+import mapVinnytsia from '../../assets/maps/vinnytsia.png'
+import mapLviv from '../../assets/maps/lviv.png'
+import mapTernopil from '../../assets/maps/ternopil.png'
+import mapIvano from '../../assets/maps/ivano-frankivsk.png'
+import mapChernivtsi from '../../assets/maps/chernivtsi.png'
+import mapZakarpattia from '../../assets/maps/zakarpattia.png'
+import mapDefault  from '../../assets/maps/default.png'
 
-import shapeVinnytsia from '../assets/regions/vinnytsia.png'
-import shapeLviv from '../assets/regions/lviv.png'
-import shapeTernopil from '../assets/regions/ternopil.png'
-import shapeIvano from '../assets/regions/ivano-frankivsk.png'
-import shapeChernivtsi from '../assets/regions/chernivtsi.png'
-import shapeZakarpattia from '../assets/regions/zakarpattia.png'
+import shapeVinnytsia from '../../assets/regions/vinnitsia.png'
+import shapeLviv from '../../assets/regions/lviv.png'
+import shapeTernopil from '../../assets/regions/ternopil.png'
+import shapeIvano from '../../assets/regions/ivano-frankivsk.png'
+import shapeChernivtsi from '../../assets/regions/chernivtsi.png'
+import shapeZakarpattia from '../../assets/regions/zakarpattia.png'
 
 export const defaultMap = mapDefault
 
