@@ -5,6 +5,7 @@ import { Helper } from "./components/Helper.tsx";
 import { InfoCards } from "./components/InfoCards.tsx";
 import { RegionsSection } from "./components/RegionsSection.tsx";
 import { FormatsSection } from "./components/FormatsSection.tsx";
+import { TestimonialsSection } from "./components/TestimonialsSection.tsx";
 
 function App() {
     return (
@@ -14,7 +15,8 @@ function App() {
             <HeroSection />
             <InfoCards />
             <RegionsSection />
-            < FormatsSection />
+            <FormatsSection />
+            <TestimonialsSection />
         </>
     )
 }
