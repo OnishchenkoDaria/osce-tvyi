@@ -1,4 +1,4 @@
-import type {NavLink, InfoCard, Region, FormatCard, Testimonial} from '../../types/content-interfaces'
+import type {NavLink, InfoCard, Region, FormatCard, Testimonial, SupportType} from '../../types/content-interfaces'
 
 export const navLinks: NavLink[] = [
     { label: 'Про проєкт', href: '#about' },
@@ -158,4 +158,11 @@ export const testimonials: Testimonial[] = [
         quote: 'Він прийшов із запитом навчитися керувати агресією, а згодом почав працювати і над вірою у себе та своє майбутнє. Разом ми працювали над емоційною стійкістю, розвитком навичок саморегуляції, навчальною мотивацією та професійним самовизначенням. Цього року хлопець успішно склав НМТ і обрав професію.',
         author: '16-річний відвідувач простору «Твій»',
     },
+]
+
+export const supportTypes: SupportType[] = [
+    { icon: 'materials', label: 'Передати матеріали' },
+    { icon: 'finance', label: 'Профінансувати потребу' },
+    { icon: 'space', label: 'Підтримати роботу простору' },
+    { icon: 'format', label: 'Запропонувати свій формат' },
 ]

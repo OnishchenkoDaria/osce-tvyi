@@ -28,3 +28,8 @@ export interface Testimonial {
     quote: string
     author: string
 }
+
+export interface SupportType {
+    icon: string
+    label: string
+}

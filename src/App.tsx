@@ -6,6 +6,7 @@ import { InfoCards } from "./components/InfoCards.tsx";
 import { RegionsSection } from "./components/RegionsSection.tsx";
 import { FormatsSection } from "./components/FormatsSection.tsx";
 import { TestimonialsSection } from "./components/TestimonialsSection.tsx";
+import { PartnersSection } from "./components/PartnersSection.tsx";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             <RegionsSection />
             <FormatsSection />
             <TestimonialsSection />
+            <PartnersSection />
         </>
     )
 }
