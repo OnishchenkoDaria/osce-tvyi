@@ -8,6 +8,7 @@ import { FormatsSection } from "./components/FormatsSection.tsx";
 import { TestimonialsSection } from "./components/TestimonialsSection.tsx";
 import { PartnersSection } from "./components/PartnersSection.tsx";
 import { FaqSection } from "./components/FaqSection.tsx";
+import { Footer } from "./components/Footer.tsx";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
             <TestimonialsSection />
             <PartnersSection />
             <FaqSection />
+            <Footer />
         </>
     )
 }
