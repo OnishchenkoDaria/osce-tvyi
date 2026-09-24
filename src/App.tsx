@@ -14,7 +14,7 @@ function App() {
     return (
         <>
             <Header />
-            <Helper />
+            {/*<Helper />*/}
             <HeroSection />
             <InfoCards />
             <RegionsSection />
