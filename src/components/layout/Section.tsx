@@ -1,8 +1,8 @@
 export function Section(
-    {children, className=""}: {children: React.ReactNode; className?: string}
+    {children, className="", id}: {children: React.ReactNode; className?: string; id?: string}
 ) {
     return (
-        <section className={`${className}`}>
+        <section id={id} className={`${className}`}>
             {children}
         </section>
     )

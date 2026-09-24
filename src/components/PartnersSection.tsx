@@ -27,11 +27,11 @@ const supportIconMap: Record<string, string> = {
 
 const partnerLogos = [osce, nsss, podorozhnyk, grono, bushe, bobsnail, rubryka]
 
-export function PartnersSection() {
+export function PartnersSection({id}:{id: string}) {
     return (
         <>
             {/*partner CTA & support types */}
-            <Section className="relative overflow-hidden bg-brand-blue">
+            <Section id={id} className="relative overflow-hidden bg-brand-blue">
                 <Container>
                     <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-12">
                         <div>

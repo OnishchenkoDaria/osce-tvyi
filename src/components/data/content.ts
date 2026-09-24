@@ -11,8 +11,8 @@ import type {
 export const navLinks: NavLink[] = [
     { label: 'Про проєкт', href: '#about' },
     { label: 'Простори', href: '#spaces' },
-    { label: 'Відгуки', href: '#testimonials' },
     { label: 'Формат', href: '#formats' },
+    { label: 'Відгуки', href: '#testimonials' },
     { label: 'Партнерам', href: '#partners' },
     { label: 'Q&A', href: '#faq' },
     { label: 'Контакти', href: '#contacts' },

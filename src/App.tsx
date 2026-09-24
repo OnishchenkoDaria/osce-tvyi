@@ -16,12 +16,12 @@ function App() {
             <Header />
             {/*<Helper />*/}
             <HeroSection />
-            <InfoCards />
-            <RegionsSection />
-            <FormatsSection />
-            <TestimonialsSection />
-            <PartnersSection />
-            <FaqSection />
+            <InfoCards id="about" />
+            <RegionsSection id="spaces" />
+            <FormatsSection id="formats" />
+            <TestimonialsSection id="testimonials" />
+            <PartnersSection id="partners" />
+            <FaqSection id="faq" />
             <Footer />
         </>
     )

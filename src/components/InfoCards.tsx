@@ -15,9 +15,9 @@ const iconMap: Record<string, string> = {
     shield: safety,
 }
 
-export function InfoCards() {
+export function InfoCards({id}:{id: string}) {
     return(
-        <Section>
+        <Section id={id}>
             <Container>
                 <div className="mx-16 my-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                     {infoCards.map((card: InfoCard) => {

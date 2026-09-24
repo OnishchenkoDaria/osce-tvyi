@@ -4,11 +4,11 @@ import { Section } from './layout/Section'
 import { Container } from './layout/Container'
 import { faqItems } from './data/content'
 
-export function FaqSection() {
+export function FaqSection({id}:{id: string}) {
     const [openIndex, setOpenIndex] = useState<number | null>(null)
 
     return (
-        <Section>
+        <Section id={id}>
             <Container>
                 <h2 className="text-center font-heading text-3xl font-extrabold text-brand-blue md:text-4xl">
                     Часті запитання

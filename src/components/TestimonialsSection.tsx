@@ -3,9 +3,9 @@ import { Container } from './layout/Container'
 import { testimonials } from './data/content'
 import notebook from '../assets/images/notebook-yellow.png'
 
-export function TestimonialsSection() {
+export function TestimonialsSection({id}:{id: string}) {
     return (
-        <Section className="relative overflow-hidden">
+        <Section id={id} className="relative overflow-hidden">
             {/* Notebook overlay — tablet/desktop only, decorative */}
             <img
                 src={notebook}

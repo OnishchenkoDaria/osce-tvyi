@@ -4,12 +4,12 @@ import { Container } from './layout/Container'
 import { RegionsDesktop } from './RegionsDesktop.tsx'
 import { RegionsMobile } from './RegionsMobile.tsx'
 
-export function RegionsSection() {
+export function RegionsSection({id}:{id: string}) {
     // null = nothing selected (default map + no address panel)
     const [selectedId, setSelectedId] = useState<string | null>(null)
 
     return (
-        <Section>
+        <Section id={id}>
             <Container>
                 <SectionHeading />
 

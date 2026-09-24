@@ -10,9 +10,9 @@ const iconMap: Record<string, string> = {
     yellow, green, blue
 }
 
-export function FormatsSection() {
+export function FormatsSection({id}:{id: string}) {
     return (
-        <Section className="relative overflow-hidden bg-brand-blue">
+        <Section id={id} className="relative overflow-hidden bg-brand-blue">
             <Container>
                 <h2 className="text-center font-heading text-3xl font-extrabold text-white md:text-4xl">
                     Формати роботи
