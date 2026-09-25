@@ -8,6 +8,7 @@ import green from '../assets/flags/green.png'
 import blue from '../assets/flags/blue.png'
 import tornTop from '../assets/torn-top.svg'
 import tornBottom from '../assets/torn-bottom.svg'
+import heroBackground from "../assets/hero-bg.png";
 
 const iconMap: Record<string, string> = {
     yellow, green, blue
@@ -15,15 +16,15 @@ const iconMap: Record<string, string> = {
 
 export function FormatsSection({id}:{id: string}) {
     return (
-        <Section id={id} className="relative overflow-hidden bg-brand-blue">
+        <Section
+            id={id}
+            className="relative overflow-hidden bg-brand-blue bg-cover bg-center"
+            style={{ backgroundImage: `url(${heroBackground})` }}
+        >
             <TornEdge src={tornTop} position="top" />
             <TornEdge src={tornBottom} position="bottom" />
 
             <Container>
-                <h2 className="text-center font-heading text-3xl font-extrabold text-white md:text-4xl">
-                    Формати роботи
-                </h2>
-
                 <div className="relative z-10 py-12 md:py-16">
                     <h2 className="text-center font-heading text-3xl font-extrabold text-white md:text-4xl">
                         Формати роботи
