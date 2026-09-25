@@ -5,6 +5,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 1200px;
 
+    --color-brand-blue-dark: #344BD7;
     --color-brand-blue:  #5f74ff;
     --color-brand-green:  #68CE77;
     --color-brand-yellow:  #FFDA5F;
@@ -24,9 +25,13 @@
     --text-lg: 16px;
     --text-xl: 24px;
     --text-3xl: 30px;
+
+    /* line-heights — unitless multipliers scale with font-size */
+    --leading-tight: 1.2;    /* headings */
+    --leading-normal: 1.5;   /* body */
+    --leading-relaxed: 1.7;  /* long paragraphs */
 }
 
-/*@media (min-width: 768px) {*/
 @media (min-width: 900px) {
     :root {
         --text-body: 16px;
@@ -47,4 +52,5 @@
 body {
     font-family: var(--font-sans);
     font-size: var(--text-body);
+    line-height: var(--leading-normal);
 }
