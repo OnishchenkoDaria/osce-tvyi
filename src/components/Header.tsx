@@ -18,13 +18,13 @@ export function Header() {
                 {/* Logo (+ tagline on desktop, per screenshot 1) */}
                 <a href="#" className="flex shrink-0 items-center gap-3">
                     <img src={logo} alt="Твій" className="h-8 w-auto lg:h-10" />
-                    <span className="hidden max-w-[8rem] text-[10px] leading-tight text-gray-500 lg:block">
+                    <span className="hidden max-w-[10rem] text-xs leading-2.5 text-brand-gray lg:block">
                         Мережа просторів психологічної та соціальної підтримки дітей
                     </span>
                 </a>
 
                 {/* Inline nav — tablet/desktop only */}
-                <nav className="hidden items-center gap-5 md:flex lg:gap-7">
+                <nav className="hidden items-center gap-5 md:flex lg:gap-4">
                     {navLinks.map((link) => {
                         const id = link.href.replace('#', '')
                         const isActive = activeId === id
@@ -32,7 +32,7 @@ export function Header() {
                             <a
                                 key={link.href}
                                 href={link.href}
-                                className={`text-sm font-medium transition-colors ${
+                                className={` transition-colors ${
                                     isActive
                                         ? 'text-brand-blue'      // active → company purple/blue
                                         : 'text-brand-navy hover:text-brand-blue'
@@ -47,7 +47,7 @@ export function Header() {
                     {/* CTA button — tablet/desktop only */}
                 <a
                     href="#partners"
-                    className="hidden shrink-0 rounded-lg bg-red-400 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-red-500 md:inline-block"
+                    className="hidden shrink-0 rounded-lg bg-brand-red px-5 py-1.5 text-sm text-white transition-colors hover:bg-red-500 md:inline-block"
                     >
                     Стати партнером
                 </a>

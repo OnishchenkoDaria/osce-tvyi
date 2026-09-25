@@ -11,29 +11,36 @@
     --color-brand-red: #FF5F74;
     --color-light-purple: #C3CBFF;
     --color-white-neutral: #FBFBFB;
+    --color-brand-navy: #444655;
+    --color-brand-gray: #7E7E83;
 
     --font-ubuntu: 'Ubuntu', ui-sans-serif, system-ui, sans-serif;
     --font-heading: 'Source Sans 3 Variable', ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
-    --text-body: 12px;
-    --text-lg: 14px;
+    --text-xs: 11px;
+    --text-body: 14px;
+    --text-lg: 16px;
     --text-xl: 24px;
     --text-3xl: 30px;
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {*/
+@media (min-width: 900px) {
     :root {
-        --text-body: 14px;
-        --text-lg: 16px;
+        --text-body: 16px;
+        --text-lg: 18px;
     }
 }
 
 @media (min-width: 1200px) {
     :root {
+        --text-sm: 16px;
         --text-body: 18px;
         --text-lg: 20px;
+        --text-xl: 22px;
+        --text-3xl: 60px;
     }
 }
 
