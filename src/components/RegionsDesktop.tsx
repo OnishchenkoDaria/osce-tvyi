@@ -1,5 +1,6 @@
 import { regions, defaultMap } from './data/content.ts'
 import { BuildingOne } from "@mynaui/icons-react";
+import {SectionHeading} from "./MapHeading.tsx";
 
 interface Props {
     selectedId: string | null
@@ -14,6 +15,7 @@ export function RegionsDesktop({ selectedId, onSelect }: Props) {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
             {/* LEFT: pills + address panel */}
             <div>
+                <SectionHeading />
                 <div className="grid grid-cols-2 gap-3">
                     {regions.map((region) => {
                         const isActive = region.id === selectedId
@@ -25,7 +27,7 @@ export function RegionsDesktop({ selectedId, onSelect }: Props) {
                                 className={`rounded-full px-5 py-3 text-sm font-semibold shadow-sm transition-colors ${
                                     isActive
                                         ? 'bg-brand-blue text-white'
-                                        : 'bg-white text-brand-navy hover:bg-gray-50'
+                                        : 'bg-white hover:bg-brand-blue-light'
                                 }`}
                             >
                                 {region.name}
@@ -54,7 +56,7 @@ export function RegionsDesktop({ selectedId, onSelect }: Props) {
 
             {/* RIGHT: map, swaps image based on selection */}
             <div className="flex justify-center">
-                <img src={mapSrc} alt="Мапа регіонів України" className="w-full max-w-lg" />
+                <img src={mapSrc} alt="Мапа регіонів України" className="h-full px-6" />
             </div>
         </div>
     )
