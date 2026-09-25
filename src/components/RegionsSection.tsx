@@ -9,7 +9,7 @@ export function RegionsSection({id}:{id: string}) {
     const [selectedId, setSelectedId] = useState<string | null>(null)
 
     return (
-        <Section id={id} className="bg-white-neutral">
+        <Section id={id} className="bg-white-neutral py-8">
             <Container>
                 {/* Desktop + tablet view */}
                 <div className="hidden md:block">
