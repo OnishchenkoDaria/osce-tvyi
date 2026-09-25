@@ -7,10 +7,10 @@
 
     --color-brand-blue-dark: #344BD7;
     --color-brand-blue:  #5f74ff;
+    --color-brand-blue-light: #C3CBFF;
     --color-brand-green:  #68CE77;
     --color-brand-yellow:  #FFDA5F;
     --color-brand-red: #FF5F74;
-    --color-light-purple: #C3CBFF;
     --color-white-neutral: #FBFBFB;
     --color-brand-navy: #444655;
     --color-brand-gray: #7E7E83;
@@ -25,6 +25,7 @@
     --text-lg: 16px;
     --text-xl: 24px;
     --text-3xl: 33px;
+    --text-4xl: 80px;
 
     /* line-heights — unitless multipliers scale with font-size */
     --leading-tight: 1.2;    /* headings */
@@ -46,6 +47,7 @@
         --text-body: 18px;
         --text-lg: 20px;
         --text-xl: 22px;
+        --text-2xl: 32px;
         --text-3xl: 60px;
     }
 }

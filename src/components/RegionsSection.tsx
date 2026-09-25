@@ -29,16 +29,23 @@ export function RegionsSection({id}:{id: string}) {
 
 function SectionHeading() {
     return (
-        <div className="mb-8">
-            <div className="flex items-baseline gap-3">
-                <span className="font-heading text-5xl font-extrabold text-brand-blue">21</span>
-                <span className="font-heading text-2xl font-extrabold text-brand-navy">ПРОСТІР</span>
+        <div className="mb-8 flex flex-col gap-0 leading-0">
+            <div className="flex items-center gap-3">
+                <span className="font-heading text-4xl font-extrabold leading-none text-brand-blue-light">
+                    21
+                </span>
+                <span className="font-heading text-2xl font-extrabold text-brand-navy">
+                    ПРОСТІР
+                </span>
             </div>
-            <div className="mt-2 flex items-center gap-3">
-                <span className="font-heading text-5xl font-extrabold text-brand-blue">6</span>
-                <span className="inline-block bg-brand-green px-4 py-1 font-heading text-xl font-extrabold text-white">
-          РЕГІОНІВ УКРАЇНИ
-        </span>
+
+            <div className="flex items-center gap-3 pl-20">
+                <span className="font-heading text-4xl font-extrabold leading-none text-brand-blue-light">
+                    6
+                 </span>
+                <span className="inline-block bg-brand-green px-4 py-1.5 font-heading text-2xl font-extrabold text-white">
+                    РЕГІОНІВ УКРАЇНИ
+                </span>
             </div>
         </div>
     )
