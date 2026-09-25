@@ -12,7 +12,7 @@ export function RegionsDesktop({ selectedId, onSelect }: Props) {
     const mapSrc = selected?.mapImage ?? defaultMap
 
     return (
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
+        <div className="grid grid-cols-2 items-start gap-8">
             {/* LEFT: pills + address panel */}
             <div>
                 <SectionHeading />
@@ -55,8 +55,12 @@ export function RegionsDesktop({ selectedId, onSelect }: Props) {
             </div>
 
             {/* RIGHT: map, swaps image based on selection */}
-            <div className="flex justify-center">
-                <img src={mapSrc} alt="Мапа регіонів України" className="h-full px-6" />
+            <div className="relative overflow-hidden">
+                <img
+                    src={mapSrc}
+                    alt="Мапа регіонів України"
+                    className="h-full max-w-160"
+                />
             </div>
         </div>
     )

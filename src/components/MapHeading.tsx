@@ -10,7 +10,7 @@ export function SectionHeading() {
                 </span>
             </div>
 
-            <div className="flex items-center gap-3 pl-20">
+            <div className="flex items-center gap-3 pl-10 md:pl-20">
                 <span className="font-heading text-4xl font-extrabold leading-[0.8] text-brand-blue-light">
                     6
                  </span>
