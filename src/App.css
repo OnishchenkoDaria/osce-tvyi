@@ -24,7 +24,7 @@
     --text-body: 14px;
     --text-lg: 16px;
     --text-xl: 24px;
-    --text-3xl: 30px;
+    --text-3xl: 33px;
 
     /* line-heights — unitless multipliers scale with font-size */
     --leading-tight: 1.2;    /* headings */
@@ -36,6 +36,7 @@
     :root {
         --text-body: 16px;
         --text-lg: 18px;
+        --text-3xl: 40px;
     }
 }
 
