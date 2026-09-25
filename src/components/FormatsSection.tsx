@@ -30,7 +30,7 @@ export function FormatsSection({id}:{id: string}) {
                         Формати роботи
                     </h2>
 
-                    <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
+                    <div className="mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
                         {formatCards.map((card) => {
                             const iconSrc = iconMap[card.icon]
                             return (
