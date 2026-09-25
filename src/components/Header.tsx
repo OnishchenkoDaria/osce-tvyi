@@ -32,7 +32,7 @@ export function Header() {
                             <a
                                 key={link.href}
                                 href={link.href}
-                                className={` transition-colors ${
+                                className={` transition-colors duration-300 ${
                                     isActive
                                         ? 'text-brand-blue'      // active → company purple/blue
                                         : 'text-brand-navy hover:text-brand-blue'
