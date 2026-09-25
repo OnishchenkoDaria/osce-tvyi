@@ -9,7 +9,7 @@ export function RegionsSection({id}:{id: string}) {
     const [selectedId, setSelectedId] = useState<string | null>(null)
 
     return (
-        <Section id={id}>
+        <Section id={id} className="bg-white-neutral">
             <Container>
                 <SectionHeading />
 
