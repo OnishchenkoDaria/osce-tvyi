@@ -25,8 +25,8 @@ export function FormatsSection({id}:{id: string}) {
             <TornEdge src={tornBottom} position="bottom" />
 
             <Container>
-                <div className="relative z-10 py-12 md:py-16">
-                    <h2 className="text-center font-heading text-3xl font-extrabold text-white md:text-4xl">
+                <div className="relative z-10 pt-24 pb-12 md:pt-40 md:pb-16">
+                    <h2 className="text-center text-[48px] font-heading font-extrabold text-white">
                         Формати роботи
                     </h2>
 
@@ -36,13 +36,13 @@ export function FormatsSection({id}:{id: string}) {
                             return (
                                 <div
                                     key={card.title}
-                                    className="flex items-center gap-4 rounded-2xl bg-white p-4 text-left md:flex-col md:items-center md:p-6 md:text-center"
+                                    className="max-w-100 flex items-center gap-4 rounded-2xl bg-white p-4 text-left md:flex-col md:items-center md:p-6 md:text-center"
                                 >
                                     <img
                                         src={iconSrc}
                                         alt=""
                                         aria-hidden="true"
-                                        className="h-10 w-10 shrink-0 md:h-12 md:w-12"
+                                        className="h-13 w-10 shrink-0 md:h-15 md:w-12"
                                     />
                                     <div>
                                         <h3 className="font-heading font-bold text-brand-navy">
@@ -62,7 +62,7 @@ export function FormatsSection({id}:{id: string}) {
                     </p>
                 </div>
 
-                <p className="mt-10 text-center text-sm text-white/80">
+                <p className="mt-10 text-center text-sm text-brand-blue-light">
                     *участь в усіх форматах є безоплатною для відвідувачів простору
                 </p>
             </Container>
