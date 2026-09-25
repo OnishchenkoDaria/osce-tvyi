@@ -64,8 +64,9 @@ body {
 
 a,
 button,
-[role = "button"] {
+[role="button"] {
     cursor: pointer;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 button:disabled,
