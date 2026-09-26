@@ -18,7 +18,7 @@ export function Header() {
                 {/* Logo (+ tagline on desktop, per screenshot 1) */}
                 <a href="#" className="flex shrink-0 items-center gap-3">
                     <img src={logo} alt="Твій" className="h-8 w-auto lg:h-10" />
-                    <span className="hidden max-w-[10rem] text-xs leading-2.5 text-brand-gray lg:block">
+                    <span className="hidden max-w-[10rem] text-[11px] leading-2.5 text-brand-gray lg:block">
                         Мережа просторів психологічної та соціальної підтримки дітей
                     </span>
                 </a>

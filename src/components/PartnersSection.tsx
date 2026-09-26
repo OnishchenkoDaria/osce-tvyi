@@ -32,7 +32,7 @@ export function PartnersSection({id}:{id: string}) {
     return (
         <>
             {/*partner CTA & support types */}
-            <Section id={id} className="relative overflow-hidden bg-brand-blue py-8">
+            <Section id={id} className="relative overflow-hidden bg-brand-blue pt-8 pb-14">
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url(${partnersBackground})` }}
@@ -60,7 +60,7 @@ export function PartnersSection({id}:{id: string}) {
                                     Підтримка
                                 </p>
 
-                                <div className="mt-4 space-y-4 text-sm font-semibold text-white">
+                                <div className="mt-10 space-y-8 text-sm font-semibold text-white">
                                     <p>
                                         Для сталої роботи й розвитку мережа просторів постійно залучає
                                         партнерську підтримку. Вона допомагає забезпечувати необхідні
@@ -82,7 +82,7 @@ export function PartnersSection({id}:{id: string}) {
 
                                 <button
                                     type="button"
-                                    className="mt-8 w-full max-w-90 text-lg flex items-center justify-center gap-2 mx-auto rounded-lg bg-brand-red px-8 py-3 font-semibold text-white transition-colors hover:bg-red-500"
+                                    className="mt-8 w-full max-w-130 text-lg flex items-center justify-center gap-2 mx-auto rounded-lg bg-brand-red px-8 py-3 font-semibold text-white transition-colors hover:bg-red-500"
                                 >
                                     Стати партнером
                                     <ExternalLink className="h-5 w-5" />

@@ -36,7 +36,7 @@ export function FormatsSection({id}:{id: string}) {
                             return (
                                 <div
                                     key={card.title}
-                                    className="max-w-100 flex items-center gap-4 rounded-2xl bg-white p-4 text-left md:flex-col md:items-center md:p-6 md:text-center"
+                                    className="mx-auto w-full max-w-100 flex items-center gap-4 rounded-2xl bg-white p-4 text-left md:flex-col md:items-center md:p-6 md:text-center"
                                 >
                                     <img
                                         src={iconSrc}
