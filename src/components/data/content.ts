@@ -171,7 +171,7 @@ export const testimonials: Testimonial[] = [
 export const supportTypes: SupportType[] = [
     { icon: 'materials', label: 'Передати матеріали' },
     { icon: 'finance', label: 'Профінансувати потребу' },
-    { icon: 'space', label: 'Підтримати роботу простору' },
+    { icon: 'work', label: 'Підтримати роботу простору' },
     { icon: 'format', label: 'Запропонувати свій формат' },
 ]
 

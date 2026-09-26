@@ -1,9 +1,9 @@
 import { Section } from './layout/Section'
 import { Container } from './layout/Container'
 import { supportTypes } from './data/content'
-import { ArrowUpRight } from '@mynaui/icons-react'
+import { ExternalLink } from "@mynaui/icons-react";
 
-import childPhoto from '../assets/child-photo.jpg'
+import childPhoto from '../assets/child-photo.png'
 import flower from '../assets/images/flower-blue.png'
 
 // support-type icons (swap to your real files)
@@ -20,6 +20,7 @@ import grono from '../assets/logos/grono.png'
 import bushe from '../assets/logos/bushe.png'
 import bobsnail from '../assets/logos/snail-bob.png'
 import rubryka from '../assets/logos/rubryka.png'
+import partnersBackground from "../assets/hero-bg.png";
 
 const supportIconMap: Record<string, string> = {
     materials, finance, work, format,
@@ -31,75 +32,90 @@ export function PartnersSection({id}:{id: string}) {
     return (
         <>
             {/*partner CTA & support types */}
-            <Section id={id} className="relative overflow-hidden bg-brand-blue">
-                <Container>
-                    <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-12">
-                        <div>
-                            <h2 className="font-heading text-3xl font-extrabold leading-tight text-white md:text-4xl">
-                                Ставайте партнерами
-                                <br />
-                                просторів "Твій"
-                            </h2>
+            <Section id={id} className="relative overflow-hidden bg-brand-blue py-8">
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: `url(${partnersBackground})` }}
+                    aria-hidden="true"
+                />
 
-                            <p className="mt-4 text-sm font-bold uppercase tracking-wide text-white/70">
-                                Підтримка
-                            </p>
+                <div
+                    className="absolute inset-0 bg-brand-blue-light/47"
+                    aria-hidden="true"
+                />
 
-                            <div className="mt-4 space-y-4 text-sm text-white/90">
-                                <p>
-                                    Для сталої роботи й розвитку мережа просторів постійно залучає
-                                    партнерську підтримку. Вона допомагає забезпечувати необхідні
-                                    ресурси, розвивати програми та створювати нові можливості для
-                                    дітей та родин.
+                <div className="relative z-10">
+                    <Container>
+                        <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-[1fr_auto] md:gap-12">
+                            <div className="max-w-200">
+                                <h2 className="font-heading text-3xl font-extrabold leading-tight text-white md:text-[70px]">
+                                    Ставайте партнерами
+                                    <br />
+                                    просторів <span className="underline underline-offset-8 decoration-dotted decoration-brand-yellow">
+                                        "Твій"
+                                    </span>
+                                </h2>
+
+                                <p className="mt-4 text-sm font-bold uppercase tracking-wide text-brand-blue-dark">
+                                    Підтримка
                                 </p>
-                                <p>
-                                    Ми відкриті до співпраці з бізнесом, громадськими
-                                    організаціями, медіа, експертами, волонтерами та всіма, хто
-                                    хоче долучитися.
-                                </p>
-                                <p>
-                                    Партнерство може бути різним: матеріальна чи фінансова
-                                    підтримка, спільні проєкти, інформаційні кампанії, експертна
-                                    участь, волонтерські ініціативи або інший формат, корисний для
-                                    обох сторін.
-                                </p>
+
+                                <div className="mt-4 space-y-4 text-sm font-semibold text-white">
+                                    <p>
+                                        Для сталої роботи й розвитку мережа просторів постійно залучає
+                                        партнерську підтримку. Вона допомагає забезпечувати необхідні
+                                        ресурси, розвивати програми та створювати нові можливості для
+                                        дітей та родин.
+                                    </p>
+                                    <p>
+                                        Ми відкриті до співпраці з бізнесом, громадськими
+                                        організаціями, медіа, експертами, волонтерами та всіма, хто
+                                        хоче долучитися.
+                                    </p>
+                                    <p>
+                                        Партнерство може бути різним: матеріальна чи фінансова
+                                        підтримка, спільні проєкти, інформаційні кампанії, експертна
+                                        участь, волонтерські ініціативи або інший формат, корисний для
+                                        обох сторін.
+                                    </p>
+                                </div>
+
+                                <button
+                                    type="button"
+                                    className="mt-8 w-full max-w-90 text-lg inline-flex items-center justify-center gap-2 rounded-lg bg-brand-red px-8 py-3 font-semibold text-white transition-colors hover:bg-red-500"
+                                >
+                                    Стати партнером
+                                    <ExternalLink  className="h-5 w-5" />
+                                </button>
                             </div>
 
-                            <button
-                                type="button"
-                                className="mt-8 inline-flex items-center gap-2 rounded-full bg-red-400 px-8 py-3 font-semibold text-white transition-colors hover:bg-red-500"
-                            >
-                                Стати партнером
-                                <ArrowUpRight className="h-5 w-5" />
-                            </button>
-                        </div>
-
-                        {/* Photo column */}
-                        <div className="flex justify-center">
-                            <img
-                                src={childPhoto}
-                                alt="Дитина малює у просторі «Твій»"
-                                className="aspect-square w-64 rounded-full object-cover md:w-80 lg:w-96"
-                            />
-                        </div>
-                    </div>
-
-                    <div className="mt-12 grid grid-cols-2 gap-6 md:mt-16 md:grid-cols-4">
-                        {supportTypes.map((item) => (
-                            <div key={item.label} className="flex flex-col items-center gap-3 text-center">
+                            {/* Photo column */}
+                            <div>
                                 <img
-                                    src={supportIconMap[item.icon]}
-                                    alt=""
-                                    aria-hidden="true"
-                                    className="h-10 w-10"
+                                    src={childPhoto}
+                                    alt="Дитина малює у просторі «Твій»"
+                                    className="aspect-square mx-auto w-auto h-86 md:h-106 lg:h-126"
                                 />
-                                <span className="text-sm font-semibold text-white">
-                  {item.label}
-                </span>
                             </div>
-                        ))}
-                    </div>
-                </Container>
+                        </div>
+
+                        <div className="mt-12 grid grid-cols-2 gap-6 md:mt-16 md:grid-cols-4">
+                            {supportTypes.map((item) => (
+                                <div key={item.label} className="flex items-center gap-3 text-center">
+                                    <img
+                                        src={supportIconMap[item.icon]}
+                                        alt={item.label}
+                                        aria-hidden="true"
+                                        className="h-10 w-10"
+                                    />
+                                    <span className="text-sm font-semibold text-brand-blue-bright">
+                                        {item.label}
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+                    </Container>
+                </div>
             </Section>
 
             {/* partner logos */}
