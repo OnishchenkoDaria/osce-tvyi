@@ -56,7 +56,7 @@ export function PartnersSection({id}:{id: string}) {
                                     </span>
                                 </h2>
 
-                                <p className="mt-4 text-sm font-bold uppercase tracking-wide text-brand-blue-dark">
+                                <p className="mt-4 text-lg font-bold uppercase tracking-wide text-brand-blue-dark">
                                     Підтримка
                                 </p>
 
@@ -82,10 +82,10 @@ export function PartnersSection({id}:{id: string}) {
 
                                 <button
                                     type="button"
-                                    className="mt-8 w-full max-w-90 text-lg inline-flex items-center justify-center gap-2 rounded-lg bg-brand-red px-8 py-3 font-semibold text-white transition-colors hover:bg-red-500"
+                                    className="mt-8 w-full max-w-90 text-lg flex items-center justify-center gap-2 mx-auto rounded-lg bg-brand-red px-8 py-3 font-semibold text-white transition-colors hover:bg-red-500"
                                 >
                                     Стати партнером
-                                    <ExternalLink  className="h-5 w-5" />
+                                    <ExternalLink className="h-5 w-5" />
                                 </button>
                             </div>
 
