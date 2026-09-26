@@ -33,12 +33,12 @@ import mapChernivtsi from '../../assets/maps/chernivtsi.png'
 import mapZakarpattia from '../../assets/maps/zakarpattia.png'
 import mapDefault  from '../../assets/maps/default.png'
 
-import shapeVinnytsia from '../../assets/regions/vinnitsia.png'
-import shapeLviv from '../../assets/regions/lviv.png'
-import shapeTernopil from '../../assets/regions/ternopil.png'
-import shapeIvano from '../../assets/regions/ivano-frankivsk.png'
-import shapeChernivtsi from '../../assets/regions/chernivtsi.png'
-import shapeZakarpattia from '../../assets/regions/zakarpattia.png'
+import shapeVinnytsia from '../../assets/regions/vinnitsia.svg'
+import shapeLviv from '../../assets/regions/lviv.svg'
+import shapeTernopil from '../../assets/regions/ternopil.svg'
+import shapeIvano from '../../assets/regions/ivano-frankivsk.svg'
+import shapeChernivtsi from '../../assets/regions/chernivtsi.svg'
+import shapeZakarpattia from '../../assets/regions/zakarpattia.svg'
 
 export const defaultMap = mapDefault
 
