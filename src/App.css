@@ -13,6 +13,7 @@
     --color-brand-yellow:  #FFDA5F;
     --color-brand-red: #FF5F74;
     --color-white-neutral: #FBFBFB;
+    --color-brand-violet-gray: #F2F3F8;
     --color-brand-navy: #444655;
     --color-brand-gray: #7E7E83;
 
@@ -53,7 +54,7 @@ html {
         --text-body: 18px;
         --text-lg: 20px;
         --text-xl: 22px;
-        --text-2xl: 32px;
+        --text-2xl: 40px;
         --text-3xl: 60px;
     }
 }

@@ -13,8 +13,8 @@ import work from '../assets/icons/work.svg'
 import format from '../assets/icons/idea.svg'
 
 
-import osce from '../assets/logos/osce.png'
-import nsss from '../assets/logos/nsss.png'
+import osce from '../assets/logos/osce_dark.png'
+import nsss from '../assets/logos/nsss_dark.png'
 import podorozhnyk from '../assets/logos/podorozhnyk.svg'
 import grono from '../assets/logos/grono.png'
 import bushe from '../assets/logos/bushe.png'
@@ -25,8 +25,6 @@ import partnersBackground from "../assets/hero-bg.png";
 const supportIconMap: Record<string, string> = {
     materials, finance, work, format,
 }
-
-const partnerLogos = [osce, nsss, podorozhnyk, grono, bushe, bobsnail, rubryka]
 
 export function PartnersSection({id}:{id: string}) {
     return (
@@ -48,7 +46,7 @@ export function PartnersSection({id}:{id: string}) {
                     <Container>
                         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-[1fr_auto] md:gap-12">
                             <div className="max-w-200">
-                                <h2 className="font-heading text-3xl font-extrabold leading-tight text-white md:text-[70px]">
+                                <h2 className="font-ubuntu text-3xl font-extrabold leading-tight text-white md:text-[70px]">
                                     Ставайте партнерами
                                     <br />
                                     просторів <span className="underline underline-offset-8 decoration-dotted decoration-brand-yellow">
@@ -119,30 +117,33 @@ export function PartnersSection({id}:{id: string}) {
             </Section>
 
             {/* partner logos */}
-            <Section className="relative overflow-hidden">
-                {/* Purple flower decoration */}
+            <Section className="relative pt-18 pb-24 bg-brand-violet-gray">
                 <img
                     src={flower}
                     alt=""
                     aria-hidden="true"
-                    className="absolute bottom-0 left-4 w-20 md:w-28 lg:left-16"
+                    className="absolute z-30 -top-11 md:-top-15 lg:-top-17 md:left-4 w-40 md:w-75 lg:w-85 lg:left-16"
                 />
 
                 <Container>
-                    <h2 className="text-center font-heading text-3xl font-extrabold text-brand-navy md:text-4xl">
+                    <h2 className="text-center font-ubuntu font-semibold text-brand-blue-dark text-3xl">
                         Наші партнери
                     </h2>
 
-                    {/* Logos reflow */}
-                    <div className="mt-8 flex flex-wrap items-center justify-center gap-6 md:mt-12 md:gap-10">
-                        {partnerLogos.map((logo, i) => (
-                            <img
-                                key={i}
-                                src={logo}
-                                alt="Партнер"
-                                className="h-8 w-auto object-contain md:h-10"
-                            />
-                        ))}
+                    {/* Row 1: OSCE + NSSS (the two official partners) */}
+                    <div className="mt-8 h-auto flex flex-wrap items-center justify-center gap-6 md:mt-12 md:gap-24">
+                        <img src={osce} alt="ОБСЄ" className="h-8 w-auto object-contain md:h-14" />
+                        <img src={nsss} alt="Національна соціальна сервісна служба України" className="h-11 w-auto object-contain md:h-22" />
+                    </div>
+
+                    {/* Row 2: the rest — 2-per-row on mobile, single row on desktop */}
+                    <div className="mt-6 grid grid-cols-2 place-items-center gap-6 md:mt-10 md:flex md:flex-wrap md:justify-center">
+                        <img src={podorozhnyk} alt="Мережа аптек Подорожник" className="h-13 w-auto object-contain md:h-14" />
+                        <img src={grono} alt="GRONO" className="h-8 w-auto object-contain md:h-8" />
+                        <img src={bushe} alt="BUSHE" className="h-8 w-auto object-contain md:h-9" />
+                        <img src={rubryka} alt="Рубрика" className="h-8 w-auto object-contain md:h-9" />
+                        {/* BOB SNAIL centered alone on the last mobile row */}
+                        <img src={bobsnail} alt="BOB SNAIL" className="col-span-2 h-8 w-auto object-contain md:h-8" />
                     </div>
                 </Container>
             </Section>
