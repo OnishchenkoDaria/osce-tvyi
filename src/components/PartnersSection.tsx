@@ -8,8 +8,8 @@ import flower from '../assets/images/flower-blue.png'
 
 // support-type icons (swap to your real files)
 import materials from '../assets/icons/supplies.svg'
-import finance from '../assets/icons/money.svg'
-import space from '../assets/icons/bag.svg'
+import finance from '../assets/icons/finance.svg'
+import work from '../assets/icons/work.svg'
 import format from '../assets/icons/idea.svg'
 
 
@@ -22,7 +22,7 @@ import bobsnail from '../assets/logos/snail-bob.png'
 import rubryka from '../assets/logos/rubryka.png'
 
 const supportIconMap: Record<string, string> = {
-    materials, finance, space, format,
+    materials, finance, work, format,
 }
 
 const partnerLogos = [osce, nsss, podorozhnyk, grono, bushe, bobsnail, rubryka]

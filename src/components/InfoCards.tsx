@@ -3,16 +3,16 @@ import {Container} from "./layout/Container.tsx";
 import type {InfoCard} from "../types/content-interfaces.ts";
 import {infoCards} from "./data/content.ts";
 import community from "../assets/icons/community.svg";
-import hands from "../assets/icons/help-hands.svg";
+import support from "../assets/icons/support.svg";
 import settings from "../assets/icons/settings.svg";
-import safety from "../assets/icons/help-hands.svg";
+import verified from "../assets/icons/verified.svg";
 
 
 const iconMap: Record<string, string> = {
     users:community ,
-    heart: hands,
+    heart: support,
     settings: settings,
-    shield: safety,
+    shield: verified,
 }
 
 export function InfoCards({id}:{id: string}) {
