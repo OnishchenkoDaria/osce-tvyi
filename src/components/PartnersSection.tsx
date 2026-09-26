@@ -85,7 +85,7 @@ export function PartnersSection({id}:{id: string}) {
                                     className="mt-8 w-full max-w-130 text-lg flex items-center justify-center gap-2 mx-auto rounded-lg bg-brand-red px-8 py-3 font-semibold text-white transition-colors hover:bg-red-500"
                                 >
                                     Стати партнером
-                                    <ExternalLink className="h-5 w-5" />
+                                    <ExternalLink className="h-5 w-5" stroke={2.5} />
                                 </button>
                             </div>
 
