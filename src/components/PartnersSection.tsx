@@ -126,7 +126,7 @@ export function PartnersSection({id}:{id: string}) {
                 />
 
                 <Container>
-                    <h2 className="text-center font-ubuntu font-semibold text-brand-blue-dark text-3xl">
+                    <h2 className="text-center font-ubuntu font-semibold text-brand-blue-dark text-2xl">
                         Наші партнери
                     </h2>
 

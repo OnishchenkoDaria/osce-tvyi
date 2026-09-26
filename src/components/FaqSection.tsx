@@ -8,13 +8,13 @@ export function FaqSection({id}:{id: string}) {
     const [openIndex, setOpenIndex] = useState<number | null>(null)
 
     return (
-        <Section id={id}>
+        <Section id={id} className="py-14">
             <Container>
-                <h2 className="text-center font-heading text-3xl font-extrabold text-brand-blue md:text-4xl">
+                <h2 className="text-center font-ubuntu font-semibold text-brand-blue-dark text-2xl">
                     Часті запитання
                 </h2>
 
-                <div className="mx-auto mt-10 flex max-w-4xl flex-col gap-4">
+                <div className="mx-auto mt-12 flex max-w-4xl flex-col gap-4">
                     {faqItems.map((item, i) => {
                         const isOpen = openIndex === i
                         return (
@@ -29,9 +29,9 @@ export function FaqSection({id}:{id: string}) {
                                     aria-expanded={isOpen}
                                     className="flex w-full items-center justify-between gap-4 p-5 text-left md:p-6"
                                 >
-                  <span className="font-bold text-brand-navy">
-                    {item.question}
-                  </span>
+                                    <span className="font-semibold">
+                                       {item.question}
+                                    </span>
                                     <ChevronDown
                                         className={`h-5 w-5 shrink-0 text-gray-400 transition-transform duration-300 ${
                                             isOpen ? 'rotate-180' : ''
@@ -45,7 +45,8 @@ export function FaqSection({id}:{id: string}) {
                                     }`}
                                 >
                                     <div className="overflow-hidden">
-                                        <div className="border-t border-gray-100 px-5 py-5 md:px-6">
+                                        <div className="px-5 pb-7 md:px-6">
+                                            <hr className="text-brand-gray/20 mb-4" />
                                             <FaqAnswer item={item} />
                                         </div>
                                     </div>
@@ -62,7 +63,7 @@ export function FaqSection({id}:{id: string}) {
 // Renders paragraphs + optional bullet list in the right order
 function FaqAnswer({ item }: { item: (typeof faqItems)[number] }) {
     return (
-        <div className="space-y-4 text-gray-600">
+        <div className="space-y-4 text-brand-navy">
             {item.paragraphs.map((p, idx) => (
                 <div key={idx}>
                     <p>{p}</p>
