@@ -45,7 +45,7 @@ export function FormatsSection({id}:{id: string}) {
                                         className="h-13 w-10 shrink-0 md:h-15 md:w-12"
                                     />
                                     <div>
-                                        <h3 className="font-heading font-bold text-brand-navy">
+                                        <h3 className="font-ubuntu font-bold text-brand-navy">
                                             {card.title}
                                         </h3>
                                         <p className="mt-1 text-sm text-gray-600 md:mt-2">
