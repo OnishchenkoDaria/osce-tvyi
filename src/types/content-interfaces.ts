@@ -26,6 +26,7 @@ export interface FormatCard {
 
 export interface Testimonial {
     quote: string
+    quoteEmphasis: string
     author: string
 }
 

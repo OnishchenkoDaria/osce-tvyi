@@ -40,6 +40,7 @@ export function TestimonialsSection({id}:{id: string}) {
                                 />
                                 <p className="text-sm font-ubuntu leading-6 text-brand-blue-dark">
                                     {t.quote}
+                                    {t.quoteEmphasis && <i>{t.quoteEmphasis}</i>}
                                 </p>
                                 <p className="text-xs font-bold text-brand-gray">
                                     {t.author}
