@@ -4,9 +4,9 @@ import logo from '../assets/logos/tviy-logo-white.png'
 
 export function Footer() {
     return (
-        <footer className="bg-brand-blue-dark py-12 text-white md:py-16">
+        <footer className="bg-brand-blue-dark pb-3 pt-12 text-white md:pt-16">
             <Container>
-                <div className="flex flex-col gap-10 md:grid md:grid-cols-3 md:items-start md:gap-6">
+                <div className="flex flex-col gap-10 md:grid md:grid-cols-3 md:items-start">
 
                     <p className="order-1 text-sm leading-relaxed text-brand-blue-light md:order-none md:col-start-2">
                         <a href="#" className="underline hover:text-white">
@@ -32,19 +32,28 @@ export function Footer() {
                         </a>
                 </div>
 
-                <div className="order-3 flex items-center justify-center gap-4 md:order-none md:col-start-3 md:row-start-1 md:justify-end">
+                <div className="order-3 flex items-center justify-center gap-4 md:order-none md:col-start-3 md:row-start-1 md:justify-start">
                     <img src={logo} alt="Твій" className="h-14 w-auto" />
-                    <a href="#" aria-label="Instagram" className="text-white hover:text-white/80">
-                        <Instagram size={50} stroke={2} />
+                    <a href="#" aria-label="Instagram" className="text-white hover:text-white/50">
+                        <Instagram size={60} stroke={1.75} fill="#7181E3" />
                     </a>
-                    <a href="#" aria-label="Facebook" className="text-white hover:text-white/80">
-                        <Facebook size={50} stroke={2} />
+                    <a
+                        href="#"
+                        aria-label="Facebook"
+                        className="group relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-[#7181E3] text-white transition-colors hover:text-white/60"
+                    >
+                        <Facebook
+                            size={50}
+                            stroke={0}
+                            fill="currentColor"
+                            className="absolute top-1"
+                        />
                     </a>
                 </div>
 
             </div>
 
-            <div className="mt-10 border-t border-white/20 pt-6 text-center md:mt-12">
+            <div className="mt-10 border-t border-white/20 pt-3 text-center md:mt-12">
                 <p className="text-sm text-white/60">© 2026</p>
             </div>
         </Container>
