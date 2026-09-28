@@ -8,7 +8,7 @@ export function Footer() {
             <Container>
                 <div className="flex flex-col gap-10 md:grid md:grid-cols-[auto_1fr_auto] md:items-start md:gap-10">
 
-                    <p className="order-1 text-sm max-w-120 leading-relaxed text-brand-blue-light md:order-none md:col-start-2">
+                    <p className="order-1 text-[12px] lg:px-12 leading-relaxed text-brand-blue-light/60 text-center md:order-none md:col-start-2">
                         <a href="https://www.osce.org/uk/node/660697" className="underline hover:text-white">
                             Програма Підтримки ОБСЄ для України
                         </a>{' '}
