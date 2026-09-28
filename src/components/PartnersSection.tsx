@@ -46,7 +46,7 @@ export function PartnersSection({id}:{id: string}) {
                     <Container>
                         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-[1fr_auto] md:gap-12">
                             <div className="max-w-200">
-                                <h2 className="font-ubuntu text-3xl font-extrabold leading-tight text-white md:text-[70px]">
+                                <h2 className="font-ubuntu text-3xl font-extrabold leading-tight text-white">
                                     Ставайте партнерами
                                     <br />
                                     просторів <span className="underline underline-offset-8 decoration-dotted decoration-brand-yellow">

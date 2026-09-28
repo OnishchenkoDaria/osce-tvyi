@@ -16,7 +16,7 @@ export function TestimonialsSection({id}:{id: string}) {
             />
 
             <Container>
-                <h2 className="font-heading text-[48px] font-extrabold leading-10 text-brand-blue-dark">
+                <h2 className="font-heading text-2xl font-extrabold leading-10 text-brand-blue-dark">
                     Кожного дня створюємо
                     <br />
                     <span className="underline underline-offset-10 decoration-brand-green decoration-dotted">

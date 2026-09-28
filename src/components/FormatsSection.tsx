@@ -26,7 +26,7 @@ export function FormatsSection({id}:{id: string}) {
 
             <Container>
                 <div className="relative z-10 pt-24 pb-12 md:pt-40 md:pb-16">
-                    <h2 className="text-center text-[48px] font-heading font-extrabold text-white">
+                    <h2 className="text-center text-2xl font-heading font-extrabold text-white">
                         Формати роботи
                     </h2>
 
