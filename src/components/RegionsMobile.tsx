@@ -37,21 +37,27 @@ export function RegionsMobile({ selectedId, onSelect }: Props) {
                                 />
                             </button>
 
-                            {isOpen && (
-                                <div className="border-t border-gray-100 px-4 pb-4">
-                                    {region.addresses.map((addr, i) => (
-                                        <div
-                                            key={addr}
-                                            className={`flex items-center justify-center gap-2 py-3 text-sm text-brand-navy ${
-                                                i !== 0 ? 'border-t border-gray-100' : ''
-                                            }`}
-                                        >
-                                            <BuildingOne />
-                                            <span>{addr}</span>
-                                        </div>
-                                    ))}
+                            <div
+                                className={`grid transition-all duration-300 ease-in-out ${
+                                    isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                                }`}
+                            >
+                                <div className="overflow-hidden">
+                                    <div className="border-t border-gray-100 px-4 pb-4">
+                                        {region.addresses.map((addr, i) => (
+                                            <div
+                                                key={addr}
+                                                className={`flex items-center justify-center gap-2 py-3 text-sm text-brand-navy ${
+                                                    i !== 0 ? 'border-t border-gray-100' : ''
+                                                }`}
+                                            >
+                                                <BuildingOne />
+                                                <span>{addr}</span>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
-                            )}
+                            </div>
                         </div>
                     )
                 })}
