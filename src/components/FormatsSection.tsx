@@ -57,14 +57,10 @@ export function FormatsSection({id}:{id: string}) {
                         })}
                     </div>
 
-                    <p className="mt-10 text-center text-sm text-white/80">
+                    <p className="my-10 text-center text-sm text-brand-blue-light">
                         *участь в усіх форматах є безоплатною для відвідувачів простору
                     </p>
                 </div>
-
-                <p className="mt-10 text-center text-sm text-brand-blue-light">
-                    *участь в усіх форматах є безоплатною для відвідувачів простору
-                </p>
             </Container>
         </Section>
     )

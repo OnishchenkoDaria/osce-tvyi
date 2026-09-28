@@ -6,7 +6,7 @@ export function Footer() {
     return (
         <footer className="bg-brand-blue-dark pb-3 pt-12 text-white md:pt-16">
             <Container>
-                <div className="flex flex-col gap-10 md:grid md:grid-cols-[auto_1fr_auto] md:items-start md:gap-20">
+                <div className="flex flex-col gap-10 md:grid md:grid-cols-[auto_1fr_auto] md:items-start md:gap-10">
 
                     <p className="order-1 text-sm max-w-120 leading-relaxed text-brand-blue-light md:order-none md:col-start-2">
                         <a href="#" className="underline hover:text-white">
