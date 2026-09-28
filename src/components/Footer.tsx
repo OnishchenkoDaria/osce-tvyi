@@ -9,7 +9,7 @@ export function Footer() {
                 <div className="flex flex-col gap-10 md:grid md:grid-cols-[auto_1fr_auto] md:items-start md:gap-10">
 
                     <p className="order-1 text-sm max-w-120 leading-relaxed text-brand-blue-light md:order-none md:col-start-2">
-                        <a href="#" className="underline hover:text-white">
+                        <a href="https://www.osce.org/uk/node/660697" className="underline hover:text-white">
                             Програма Підтримки ОБСЄ для України
                         </a>{' '}
                         не відповідає за точність і повноту інформації, наведені настанови,
@@ -35,11 +35,11 @@ export function Footer() {
                     <div className="order-3 flex w-fit flex-row items-center gap-4 md:order-none md:col-start-3 md:flex-col md:items-end md:justify-self-end lg:flex-row lg:items-center">
                         <img src={logo} alt="Твій" className="h-14 w-auto" />
                         <div className="flex items-center gap-4">
-                            <a href="#" aria-label="Instagram" className="text-white hover:text-white/50">
+                            <a href="https://www.instagram.com/tviy.spaces?stkn=YWFhYW12M3FteWRj" aria-label="Instagram" className="text-white hover:text-white/50">
                                 <Instagram size={60} stroke={1.75} fill="#7181E3" />
                             </a>
                             <a
-                                href="#"
+                                href="https://www.facebook.com/share/1DrnmHKGrz/"
                                 aria-label="Facebook"
                                 className="group relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-[#7181E3] text-white transition-colors hover:text-white/60"
                             >
