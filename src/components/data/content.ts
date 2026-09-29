@@ -225,3 +225,6 @@ export const faqItems: FaqItem[] = [
         ],
     },
 ]
+
+export const ContriesRowOne = ['al','ax','be','bg','ca','cz','ee','fr','gr','de','is','ie','it','jp','lv','li','lt','lu']
+export const CountriesRowTwo = ['mt','mc','me','nl','no','pl','pt','kr','ro','sk','si','es','se','th','tr','gb','us','eu']

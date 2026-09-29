@@ -21,6 +21,7 @@ import bushe from '../assets/logos/bushe.png'
 import bobsnail from '../assets/logos/snail-bob.png'
 import rubryka from '../assets/logos/rubryka.png'
 import partnersBackground from "../assets/hero-bg.png";
+import {FlagsScrollable} from "./FlagsScrollable.tsx";
 
 const supportIconMap: Record<string, string> = {
     materials, finance, work, format,
@@ -127,23 +128,24 @@ export function PartnersSection({id}:{id: string}) {
 
                 <Container>
                     <h2 className="text-center font-ubuntu font-semibold text-brand-blue-dark text-2xl">
-                        Наші партнери
+                        Наші донори
                     </h2>
 
-                    {/* Row 1: OSCE + NSSS (the two official partners) */}
+                    {/* Row 1: OSCE + NSSS (the two official partners)
                     <div className="mt-8 h-auto flex flex-wrap items-center justify-center gap-6 md:mt-12 md:gap-24">
                         <img src={osce} alt="ОБСЄ" className="h-8 w-auto object-contain md:h-14" />
                         <img src={nsss} alt="Національна соціальна сервісна служба України" className="h-11 w-auto object-contain md:h-22" />
                     </div>
 
-                    {/* Row 2: the rest — 2-per-row on mobile, single row on desktop */}
                     <div className="mt-6 grid grid-cols-2 place-items-center gap-6 md:mt-10 md:flex md:flex-wrap md:justify-center">
                         <img src={podorozhnyk} alt="Мережа аптек Подорожник" className="h-13 w-auto object-contain md:h-14" />
                         <img src={grono} alt="GRONO" className="h-8 w-auto object-contain md:h-8" />
                         <img src={bushe} alt="BUSHE" className="h-8 w-auto object-contain md:h-9" />
                         <img src={rubryka} alt="Рубрика" className="h-8 w-auto object-contain md:h-9" />
-                        {/* BOB SNAIL centered alone on the last mobile row */}
                         <img src={bobsnail} alt="BOB SNAIL" className="col-span-2 h-8 w-auto object-contain md:h-8" />
+                    </div>*/}
+                    <div className="mt-8">
+                        <FlagsScrollable />
                     </div>
                 </Container>
             </Section>
