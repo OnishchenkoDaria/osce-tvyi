@@ -1,16 +1,16 @@
 import { Section } from './layout/Section'
 import { Container } from './layout/Container'
-import { supportTypes } from './data/content'
+//import { supportTypes } from './data/content'
 import { ExternalLink } from "@mynaui/icons-react";
 
 import childPhoto from '../assets/child-photo.png'
 import flower from '../assets/images/flower-blue.png'
 
 // support-type icons (swap to your real files)
-import materials from '../assets/icons/supplies.svg'
+/*import materials from '../assets/icons/supplies.svg'
 import finance from '../assets/icons/finance.svg'
 import work from '../assets/icons/work.svg'
-import format from '../assets/icons/idea.svg'
+import format from '../assets/icons/idea.svg'*/
 
 
 import osce from '../assets/logos/osce_dark.png'
@@ -23,9 +23,9 @@ import rubryka from '../assets/logos/rubryka.png'
 import partnersBackground from "../assets/hero-bg.png";
 import {FlagsScrollable} from "./FlagsScrollable.tsx";
 
-const supportIconMap: Record<string, string> = {
+/*const supportIconMap: Record<string, string> = {
     materials, finance, work, format,
-}
+}*/
 
 export function PartnersSection({id}:{id: string}) {
     return (
