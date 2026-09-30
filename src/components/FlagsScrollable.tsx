@@ -14,8 +14,7 @@ function FlagRow({ codes, direction }: { codes: string[]; direction: 'right' | '
                 {[...codes, ...codes].map((code, i) => (
                     <span
                         key={`${code}-${i}`}
-                        className={`fi fi-${code} shrink-0 shadow-sm`}
-                        style={{ width: '80px', height: '60px' }}
+                        className={`fi fi-${code} flag-size shrink-0 shadow-sm`}
                     />
                 ))}
             </div>
