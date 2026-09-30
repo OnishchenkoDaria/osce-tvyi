@@ -43,7 +43,7 @@ export function HeroSection() {
                             </p>
 
                             {/* partner logos */}
-                            <div className="mt-8 flex h-11 items-center gap-6 md:mt-12 md:h-10">
+                            <div className="mt-8 flex h-11 md:h-13 items-center gap-6 md:mt-12">
                                 <img
                                     src={osceLogo}
                                     alt="OSCE"
