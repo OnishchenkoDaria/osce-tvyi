@@ -11,6 +11,7 @@ export function TestimonialsSection({id}:{id: string}) {
             <img
                 src={notebook}
                 alt=""
+                loading="lazy"
                 aria-hidden="true"
                 className="absolute z-30 right-4 -top-40 hidden w-82 md:block lg:right-16 lg:w-92"
             />
@@ -36,6 +37,7 @@ export function TestimonialsSection({id}:{id: string}) {
                                     src={quote}
                                     alt=""
                                     aria-hidden="true"
+                                    loading="lazy"
                                     className="w-6"
                                 />
                                 <p className="text-sm font-ubuntu leading-6 text-brand-blue-dark">

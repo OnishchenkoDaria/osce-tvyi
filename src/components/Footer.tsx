@@ -33,7 +33,7 @@ export function Footer() {
                 </div>
 
                     <div className="order-3 flex w-fit flex-row items-center gap-4 md:order-none md:col-start-3 md:flex-col md:items-end md:justify-self-end lg:flex-row lg:items-center">
-                        <img src={logo} alt="Твій" className="h-14 w-auto" />
+                        <img src={logo} loading="lazy" alt="Твій" className="h-14 w-auto" />
                         <div className="flex items-center gap-4">
                             <a href="https://www.instagram.com/tviy.spaces?stkn=YWFhYW12M3FteWRj" aria-label="Instagram" className="text-white hover:text-white/50">
                                 <Instagram size={60} stroke={1.75} fill="#7181E3" />

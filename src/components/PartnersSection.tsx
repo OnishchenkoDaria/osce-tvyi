@@ -92,6 +92,7 @@ export function PartnersSection({id}:{id: string}) {
                             <div>
                                 <img
                                     src={childPhoto}
+                                    loading="lazy"
                                     alt="Дитина малює у просторі «Твій»"
                                     className="aspect-square mx-auto w-auto h-86 md:h-106 lg:h-126"
                                 />
@@ -114,13 +115,13 @@ export function PartnersSection({id}:{id: string}) {
                             ))
                         </div>*/}
                         <div className="mt-6 place-items-center gap-6 md:mt-10 flex flex-wrap justify-center">
-                            <img src={osce} alt="ОБСЄ" className="h-7 w-auto object-contain md:h-8" />
-                            <img src={nsss} alt="Національна соціальна сервісна служба України" className="h-9 w-auto object-contain md:h-13" />
-                            <img src={podorozhnyk} alt="Мережа аптек Подорожник" className="h-11 w-auto object-contain md:h-14" />
-                            <img src={grono} alt="GRONO" className="h-6 w-auto object-contain md:h-8" />
-                            <img src={bushe} alt="BUSHE" className="h-6 w-auto object-contain md:h-9" />
-                            <img src={rubryka} alt="Рубрика" className="h-6 w-auto object-contain md:h-9" />
-                            <img src={bobsnail} alt="BOB SNAIL" className="h-6 w-auto object-contain md:h-8" />
+                            <img src={osce} loading="lazy" alt="ОБСЄ" className="h-7 w-auto object-contain md:h-8" />
+                            <img src={nsss} loading="lazy" alt="Національна соціальна сервісна служба України" className="h-9 w-auto object-contain md:h-13" />
+                            <img src={podorozhnyk} loading="lazy" alt="Мережа аптек Подорожник" className="h-11 w-auto object-contain md:h-14" />
+                            <img src={grono} loading="lazy" alt="GRONO" className="h-6 w-auto object-contain md:h-8" />
+                            <img src={bushe} loading="lazy" alt="BUSHE" className="h-6 w-auto object-contain md:h-9" />
+                            <img src={rubryka} loading="lazy" alt="Рубрика" className="h-6 w-auto object-contain md:h-9" />
+                            <img src={bobsnail} loading="lazy" alt="BOB SNAIL" className="h-6 w-auto object-contain md:h-8" />
                         </div>
 
                     </Container>
@@ -132,6 +133,7 @@ export function PartnersSection({id}:{id: string}) {
                 <img
                     src={flower}
                     alt=""
+                    loading="lazy"
                     aria-hidden="true"
                     className="absolute z-30 -top-11 md:-top-15 lg:-top-17 md:left-4 w-40 md:w-75 lg:w-85 lg:left-16"
                 />

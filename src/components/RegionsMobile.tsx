@@ -23,7 +23,7 @@ export function RegionsMobile({ selectedId, onSelect }: Props) {
                                 className="flex w-full items-center gap-3 p-4 text-left"
                                 aria-expanded={isOpen}
                             >
-                                <img src={region.shapeIcon} alt="" aria-hidden="true" className="h-10 w-10" />
+                                <img src={region.shapeIcon} alt="" loading="lazy" aria-hidden="true" className="h-10 w-10" />
                                 <span className="flex-1">
                             <span className="block font-bold text-brand-navy">{region.name}</span>
                                 <span className="block text-sm text-gray-500">

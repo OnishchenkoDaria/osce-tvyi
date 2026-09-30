@@ -42,6 +42,7 @@ export function FormatsSection({id}:{id: string}) {
                                         src={iconSrc}
                                         alt=""
                                         aria-hidden="true"
+                                        loading="lazy"
                                         className="h-13 w-10 shrink-0 md:h-15 md:w-12"
                                     />
                                     <div>

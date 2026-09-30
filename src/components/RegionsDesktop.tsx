@@ -1,7 +1,7 @@
 import { regions, defaultMap } from './data/content.ts'
 import { BuildingOne } from "@mynaui/icons-react";
 import { SectionHeading } from "./MapHeading.tsx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface Props {
     selectedId: string | null
@@ -9,6 +9,15 @@ interface Props {
 }
 
 export function RegionsDesktop({ selectedId, onSelect }: Props) {
+
+    useEffect(() => {
+        // fetch every map into the browser cache
+        ;[defaultMap, ...regions.map(r => r.mapImage)].forEach((src) => {
+            const img = new Image()
+            img.src = src
+        })
+    }, [])
+
     const selected = regions.find((r) => r.id === selectedId) ?? null
     const mapSrc = selected?.mapImage ?? defaultMap
 
