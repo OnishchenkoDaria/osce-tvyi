@@ -114,13 +114,13 @@ export function PartnersSection({id}:{id: string}) {
                             ))
                         </div>*/}
                         <div className="mt-6 place-items-center gap-6 md:mt-10 flex flex-wrap justify-center">
-                            <img src={osce} alt="ОБСЄ" className="h-8 w-auto object-contain" />
-                            <img src={nsss} alt="Національна соціальна сервісна служба України" className="h-13 w-auto object-contain" />
-                            <img src={podorozhnyk} alt="Мережа аптек Подорожник" className="h-13 w-auto object-contain md:h-14" />
-                            <img src={grono} alt="GRONO" className="h-8 w-auto object-contain md:h-8" />
-                            <img src={bushe} alt="BUSHE" className="h-8 w-auto object-contain md:h-9" />
-                            <img src={rubryka} alt="Рубрика" className="h-8 w-auto object-contain md:h-9" />
-                            <img src={bobsnail} alt="BOB SNAIL" className="col-span-2 h-8 w-auto object-contain md:h-8" />
+                            <img src={osce} alt="ОБСЄ" className="h-7 w-auto object-contain md:h-8" />
+                            <img src={nsss} alt="Національна соціальна сервісна служба України" className="h-9 w-auto object-contain md:h-13" />
+                            <img src={podorozhnyk} alt="Мережа аптек Подорожник" className="h-11 w-auto object-contain md:h-14" />
+                            <img src={grono} alt="GRONO" className="h-6 w-auto object-contain md:h-8" />
+                            <img src={bushe} alt="BUSHE" className="h-6 w-auto object-contain md:h-9" />
+                            <img src={rubryka} alt="Рубрика" className="h-6 w-auto object-contain md:h-9" />
+                            <img src={bobsnail} alt="BOB SNAIL" className="h-6 w-auto object-contain md:h-8" />
                         </div>
 
                     </Container>
