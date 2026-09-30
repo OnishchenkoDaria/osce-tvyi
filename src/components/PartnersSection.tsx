@@ -144,7 +144,7 @@ export function PartnersSection({id}:{id: string}) {
                         <img src={rubryka} alt="Рубрика" className="h-8 w-auto object-contain md:h-9" />
                         <img src={bobsnail} alt="BOB SNAIL" className="col-span-2 h-8 w-auto object-contain md:h-8" />
                     </div>*/}
-                    <div className="mt-8">
+                    <div className="mt-12">
                         <FlagsScrollable />
                     </div>
                 </Container>
