@@ -88,8 +88,6 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
             Опис: values.description || '—',
         }
 
-        console.log(payload)
-
         try {
             const res = await fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
