@@ -22,12 +22,15 @@ import bobsnail from '../assets/logos/snail-bob.png'
 import rubryka from '../assets/logos/rubryka.png'
 import partnersBackground from "../assets/hero-bg.png";
 import {FlagsScrollable} from "./FlagsScrollable.tsx";
+import { PartnershipModal } from './PartnershipModal';
+import {useState} from "react";
 
 /*const supportIconMap: Record<string, string> = {
     materials, finance, work, format,
 }*/
 
 export function PartnersSection({id}:{id: string}) {
+    const [isModalOpen, setIsModalOpen] = useState(false)
     return (
         <>
             {/*partner CTA & support types */}
@@ -82,6 +85,7 @@ export function PartnersSection({id}:{id: string}) {
                                 <button
                                     type="button"
                                     className="mt-8 w-full max-w-130 text-lg flex items-center justify-center gap-2 mx-auto rounded-lg bg-brand-red px-8 py-3 font-semibold text-white transition-colors hover:bg-red-500"
+                                    onClick={() => setIsModalOpen(true)}
                                 >
                                     Стати партнером
                                     <ExternalLink className="h-5 w-5" stroke={2.5} />
@@ -161,6 +165,7 @@ export function PartnersSection({id}:{id: string}) {
                     </div>
                 </Container>
             </Section>
+            <PartnershipModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </>
     )
 }

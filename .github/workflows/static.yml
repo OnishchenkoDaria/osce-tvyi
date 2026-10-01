@@ -51,6 +51,11 @@ jobs:
         with:
           path: './dist'      # ← changed from '.' to the built output
 
+      - name: Build
+        run: npm run build
+        env:
+          VITE_WEB3FORMS_KEY: ${{ secrets.VITE_WEB3FORMS_KEY }}
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
