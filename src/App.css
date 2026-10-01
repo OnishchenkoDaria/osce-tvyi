@@ -83,17 +83,15 @@ section[id] {
     scroll-margin-top: 80px;   /* ≈ your header height */
 }
 
-@keyframes scroll-right {
-    from { transform: translateX(-50%); }
-    to   { transform: translateX(0); }
-}
-@keyframes scroll-left {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
-}
-
-.animate-scroll-right { animation: scroll-right 40s linear infinite; }
 .animate-scroll-left  { animation: scroll-left 40s linear infinite; }
+.animate-scroll-right { animation: scroll-right 40s linear infinite; }
+
+@keyframes scroll-left {
+    to { transform: translateX(calc(-50% - 0.75rem)); }
+}
+@keyframes scroll-right {
+    from { transform: translateX(calc(-50% - 0.75rem)); }
+}
 
 .flag-size {
     width: 56px !important;
