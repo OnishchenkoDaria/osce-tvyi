@@ -3,6 +3,7 @@ import { X, ChevronDown } from '@mynaui/icons-react'
 import { partnershipFormats } from './data/content'
 import { useForm, Controller } from 'react-hook-form'
 import { Listbox } from '@headlessui/react'
+import format from '../assets/icons/idea.svg'
 
 interface Props {
     isOpen: boolean
@@ -19,7 +20,7 @@ interface FormValues {
 }
 
 const fieldClass =
-    'w-full rounded-lg border bg-white px-4 py-3 text-sm text-brand-navy ' +
+    'w-full rounded-lg border bg-white px-4 py-2 text-sm text-brand-navy ' +
     'placeholder:text-brand-gray transition-colors ' +
     'focus:outline-none focus:ring-2 focus:ring-brand-blue/30'
 
@@ -80,6 +81,8 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
             Опис: values.description || '—',
         }
 
+        console.log(payload)
+
         try {
             const res = await fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
@@ -101,7 +104,7 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
     if (!isOpen) return null
 
     const borderClass = (hasError: boolean) =>
-        hasError ? 'border-brand-red focus:border-brand-red' : 'border-brand-blue-light/50 focus:border-brand-blue'
+        hasError ? 'border-brand-red focus:border-brand-red' : 'border-brand-blue/50 focus:border-brand-blue'
 
     return (
         <div
@@ -121,11 +124,19 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
                     <X className="h-6 w-6" />
                 </button>
 
-                <h3 className="font-ubuntu text-xl font-extrabold text-brand-blue-dark md:text-2xl">
-                    Стати партнером
-                </h3>
-                <p className="mt-2 text-sm text-brand-gray">
-                    Залиште заявку — ми звʼяжемося з вами найближчим часом.
+                <div className="flex gap-2 items-center">
+                    <h3 className="font-ubuntu text-xl font-extrabold text-brand-blue-dark md:text-2xl">
+                        Стати партнером
+                    </h3>
+                    <img
+                        src={format}
+                        aria-hidden="true"
+                        className="h-12 w-12"
+                    />
+                </div>
+
+                <p className="text-sm text-brand-gray">
+                    Залиште заявку на партнерство і ми звʼяжемося з вами найближчим часом.
                 </p>
 
                 {status === 'success' ? (
@@ -145,7 +156,7 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
 
                         {/* Name */}
                         <div>
-                            <label className="mb-1 block text-sm font-semibold text-brand-navy">
+                            <label className="mb-1 block text-sm font-ubuntu font-semibold text-brand-navy">
                                 ПІБ / Назва організації <span className="text-brand-red font-bold">*</span>
                             </label>
                             <input
@@ -159,7 +170,7 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
 
                         {/* Email */}
                         <div>
-                            <label className="mb-1 block text-sm font-semibold text-brand-navy">
+                            <label className="mb-1 block text-sm font-ubuntu font-semibold text-brand-navy">
                                 Електронна пошта <span className="text-brand-red font-bold">*</span>
                             </label>
                             <input
@@ -179,22 +190,22 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
 
                         {/* Phone with fixed +380 prefix */}
                         <div>
-                            <label className="mb-1 block text-sm font-semibold text-brand-navy">
+                            <label className="mb-1 block text-sm font-ubuntu font-semibold text-brand-navy">
                                 Телефон
                             </label>
                             <div
-                                className={`flex items-center overflow-hidden rounded-lg border bg-white transition-colors focus-within:ring-2 focus-within:ring-brand-blue/30 ${
-                                    errors.phone ? 'border-brand-red focus-within:border-brand-red' : 'border-brand-blue-light/50 focus-within:border-brand-blue'
+                                className={`flex items-center overflow-hidden rounded-lg border border-brand-blue/50 bg-white transition-colors focus-within:ring-2 focus-within:ring-brand-blue/30 ${
+                                    errors.phone ? 'border-brand-red' : 'focus-within:border-brand-blue'
                                 }`}
                             >
-                                <span className="flex select-none items-center gap-1 border-r border-brand-blue-light/50 bg-brand-violet-gray px-3 py-3 text-sm font-semibold text-brand-navy">
+                                <span className="flex select-none items-center gap-1 border-r border-brand-blue-light/50 bg-brand-violet-gray px-3 py-2 text-sm font-semibold text-brand-navy">
                                     +380
                                 </span>
                                 <input
                                     type="tel"
                                     inputMode="numeric"
                                     placeholder="50 123 45 67"
-                                    className="w-full bg-transparent px-4 py-3 text-sm text-brand-navy placeholder:text-brand-gray focus:outline-none"
+                                    className="w-full bg-transparent px-4 py-2 text-sm text-brand-navy placeholder:text-brand-gray focus:outline-none"
                                     {...register('phone', {
                                         onChange: (e) => {
                                             setValue('phone', formatLocalPhone(e.target.value), { shouldValidate: false })
@@ -209,7 +220,7 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
 
                         {/* Format — custom Listbox */}
                         <div>
-                            <label className="mb-1 block text-sm font-semibold text-brand-navy">
+                            <label className="mb-1 block text-sm font-ubuntu font-semibold text-brand-navy">
                                 Формат партнерства <span className="text-brand-red font-bold">*</span>
                             </label>
                             <Controller
@@ -233,7 +244,7 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
                                                     <Listbox.Option
                                                         key={f}
                                                         value={f}
-                                                        className="cursor-pointer px-4 py-3 text-sm text-brand-navy data-[headlessui-state~=active]:bg-brand-blue-light/40 data-[headlessui-state~=selected]:font-semibold data-[headlessui-state~=selected]:text-brand-blue"
+                                                        className="cursor-pointer px-4 py-3 text-sm text-brand-navy data-[headlessui-state~=active]:bg-brand-blue-light/40 data-[headlessui-state~=active]:text-brand-blue-dark data-[headlessui-state~=selected]:font-semibold data-[headlessui-state~=selected]:text-brand-blue"
                                                     >
                                                         {f}
                                                     </Listbox.Option>
@@ -248,12 +259,12 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
 
                         {/* Description */}
                         <div>
-                            <label className="mb-1 block text-sm font-semibold text-brand-navy">
-                                Опис діяльності <span className="font-normal text-brand-gray">(необовʼязково)</span>
+                            <label className="mb-1 block text-sm font-ubuntu font-semibold text-brand-navy">
+                                Опис діяльності
                             </label>
                             <textarea
                                 rows={4}
-                                placeholder="Коротко про вашу організацію та як ви хочете долучитися…"
+                                placeholder="За бажанням, коротко про вашу організацію та як ви хочете долучитися…"
                                 className={`${fieldClass} resize-none ${borderClass(!!errors.description)}`}
                                 {...register('description')}
                             />
@@ -268,7 +279,7 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
                         <button
                             type="submit"
                             disabled={status === 'sending'}
-                            className="mt-2 w-full rounded-lg bg-brand-red px-8 py-3 font-semibold text-white transition-colors hover:bg-red-500 disabled:cursor-not-allowed disabled:opacity-60"
+                            className="mt-2 w-full rounded-lg bg-brand-red px-8 py-2 font-semibold text-white transition-colors hover:bg-red-500 disabled:cursor-not-allowed disabled:opacity-60"
                         >
                             {status === 'sending' ? 'Надсилання…' : 'Надіслати заявку'}
                         </button>
