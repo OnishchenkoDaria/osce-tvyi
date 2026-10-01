@@ -4,9 +4,11 @@ import { MobileMenuOverlay } from './MobileMenuOverlay'
 import logo from "../assets/logos/tviy-logo.png"
 import {navLinks} from "./data/content.ts";
 import { useScrollSpy } from '../hooks/useScrollSpy'
+import {PartnershipModal} from "./PartnershipModal.tsx";
 
 export function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     // ids from your nav hrefs ('#about' -> 'about')
     const sectionIds = navLinks.map((l) => l.href.replace('#', ''))
@@ -48,7 +50,8 @@ export function Header() {
                 <a
                     href="#partners"
                     className="hidden shrink-0 rounded-lg bg-brand-red px-5 py-1.5 text-sm text-white transition-colors hover:bg-red-500 md:inline-block"
-                    >
+                    onClick={() => setIsModalOpen(true)}
+                >
                     Стати партнером
                 </a>
 
@@ -63,6 +66,7 @@ export function Header() {
                 </button>
             </div>
             <MobileMenuOverlay isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+            <PartnershipModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </header>
     )
 }

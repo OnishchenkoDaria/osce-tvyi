@@ -55,16 +55,22 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
         reValidateMode: 'onChange',
     })
 
+    const handleClose = () => {
+        setStatus('idle')
+        reset()
+        onClose()
+    }
+
     useEffect(() => {
         if (!isOpen) return
         document.body.style.overflow = 'hidden'
-        const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose()
+        const onKey = (e: KeyboardEvent) => e.key === 'Escape' && handleClose()
         window.addEventListener('keydown', onKey)
         return () => {
             document.body.style.overflow = ''
             window.removeEventListener('keydown', onKey)
         }
-    }, [isOpen, onClose])
+    }, [isOpen])
 
     async function onSubmit(values: FormValues) {
         if (values.botcheck) return
@@ -74,6 +80,7 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
             access_key: import.meta.env.VITE_WEB3FORMS_KEY,
             subject: `Нова заявка на партнерство: ${values.format}`,
             from_name: 'Сайт «Твій»',
+            replyto: values.email,
             'Імʼя / Організація': values.name,
             Email: values.email,
             Телефон: values.phone ? `+380 ${values.phone}` : '—',
@@ -109,7 +116,7 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
     return (
         <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-brand-navy/50 p-4 backdrop-blur-sm"
-            onClick={onClose}
+            onClick={handleClose}
         >
             <div
                 onClick={(e) => e.stopPropagation()}
@@ -117,7 +124,7 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
             >
                 <button
                     type="button"
-                    onClick={onClose}
+                    onClick={handleClose}
                     aria-label="Закрити"
                     className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full text-brand-gray transition-colors hover:bg-brand-blue-light/40 hover:text-brand-blue-light"
                 >
@@ -143,7 +150,7 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
                     <div className="mt-8 rounded-xl bg-brand-green/15 p-6 text-center">
                         <p className="font-ubuntu font-bold text-brand-navy">Дякуємо! Вашу заявку надіслано.</p>
                         <button
-                            onClick={onClose}
+                            onClick={handleClose}
                             className="mt-4 rounded-lg bg-brand-blue px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-blue-dark"
                         >
                             Закрити
