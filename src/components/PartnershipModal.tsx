@@ -149,12 +149,12 @@ export function PartnershipModal({ isOpen, onClose }: Props) {
                 {status === 'success' ? (
                     <div className="mt-8 rounded-xl bg-brand-green/15 p-6 text-center">
                         <p className="font-ubuntu font-bold text-brand-navy">Дякуємо! Вашу заявку надіслано.</p>
-                        <button
+                        {/*<button
                             onClick={handleClose}
                             className="mt-4 rounded-lg bg-brand-blue px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-blue-dark"
                         >
                             Закрити
-                        </button>
+                        </button>*/}
                     </div>
                 ) : (
                     <form onSubmit={handleSubmit(onSubmit)} className="mt-6 flex flex-col gap-4" noValidate>
