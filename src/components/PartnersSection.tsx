@@ -13,8 +13,8 @@ import work from '../assets/icons/work.svg'
 import format from '../assets/icons/idea.svg'*/
 
 
-import osce from '../assets/logos/osce_dark.png'
-import nsss from '../assets/logos/nsss_dark.png'
+//import osce from '../assets/logos/osce_dark.png'
+//import nsss from '../assets/logos/nsss_dark.png'
 import podorozhnyk from '../assets/logos/podorozhnyk.svg'
 import grono from '../assets/logos/grono.png'
 import bushe from '../assets/logos/bushe.png'
