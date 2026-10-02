@@ -25,10 +25,10 @@ export function Footer() {
                             З усіх додаткових питань можна комунікувати за електронною адресою:
                         </p>
                         <a
-                            href="mailto:tviy.osce.nsss@gmail.com"
+                            href="mailto:tviy.prostir.osce@gmail.com"
                             className="mt-4 text-xl inline-block font-ubuntu tracking-wider font-bold underline underline-offset-6 decoration-brand-blue hover:text-brand-blue-light hover:decoration-brand-blue-light"
                         >
-                            tviy.osce.nsss@gmail.com
+                            tviy.prostir.osce@gmail.com
                         </a>
                 </div>
 
