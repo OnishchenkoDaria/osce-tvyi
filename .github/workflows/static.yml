@@ -44,6 +44,7 @@ jobs:
         run: npm run build
         env:
           VITE_WEB3FORMS_KEY: ${{ secrets.VITE_WEB3FORMS_KEY }}
+          VITE_BASE: /osce-tvyi/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
