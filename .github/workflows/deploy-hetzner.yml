@@ -35,6 +35,13 @@ jobs:
           # test -> https://tviy.org.ua/test/ ; production -> https://tviy.org.ua/
           VITE_BASE: ${{ inputs.target == 'production' && '/' || '/test/' }}
 
+      - name: Save build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-${{ github.sha }}
+          path: dist/
+          retention-days: 90
+
       - name: Upload via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
