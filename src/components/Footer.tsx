@@ -4,7 +4,9 @@ import logo from '../assets/logos/tviy-logo-white.png'
 
 export function Footer() {
     return (
-        <footer className="bg-brand-blue-dark pb-3 pt-12 text-white md:pt-16">
+        <footer
+            id="contacts"
+            className="bg-brand-blue-dark pb-3 pt-12 text-white md:pt-16 scroll-mt-20">
             <Container>
                 <div className="flex flex-col gap-10 md:grid md:grid-cols-[auto_1fr_auto] md:items-start md:gap-10">
 
