@@ -1,4 +1,14 @@
-# Single-page landing: no routing fallback needed.
+# Single-page landing.
+# Unknown "page" URLs (no file extension) get index.html, and React renders the 404 page.
+# Missing files (e.g. a removed .js/.png) still return a real 404 via /404.html.
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !\.[A-Za-z0-9]+$
+RewriteRule ^ index.html [L]
+
+ErrorDocument 404 /404.html
+
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/json
 </IfModule>
